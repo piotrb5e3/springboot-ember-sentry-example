@@ -1,0 +1,24 @@
+<div>
+  <div>Select data source:</div>
+  <div>
+    {{#power-select options=sources
+                    selected=selectedSource
+                    onchange=(action (mut selectedSource))
+                    as |source|}}
+      {{source.name}}
+    {{/power-select}}
+  </div>
+  <div>
+    City:
+  </div>
+  <div>
+    {{input value=cityName}}
+  </div>
+  <div>
+  <button {{action 'getWeather'}}>Get Weather!</button>
+  </div>
+  <div>Result:</div>
+  <div>Description: {{weatherResponse.description}}</div>
+  <div>Temperature: {{weatherResponse.temperature}}</div>
+  <div>Pressure: {{weatherResponse.pressure}}</div>
+</div>

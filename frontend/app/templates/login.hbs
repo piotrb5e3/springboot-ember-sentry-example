@@ -1,0 +1,7 @@
+<div>{{errorMessage}}</div>
+<div>Username: {{input value=username}}</div>
+<div>Password: {{input value=password type='password'}}</div>
+<div>
+  <button {{action "tryAuthenticate"}}>Login</button>
+</div>
+{{outlet}}

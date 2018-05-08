@@ -1,0 +1,2 @@
+sentry:
+  dsn: 'YOUR_PRIVATE_DSN'
